@@ -20,6 +20,58 @@ Or install it yourself as:
 $ gem install keyword_parameter_matchers
 ```
 
+## Usage
+
+```ruby
+require 'keyword_parameter_matchers/rspec'
+
+
+```
+
+## Usage
+
+```ruby
+require 'keyword_parameter_matchers/rspec'
+
+class Example
+  def self.example_class_method(a:, b: 'B')
+  end
+
+  def example_instance_method(a:, b: 'B')
+  end
+end
+
+describe Example
+  describe '.example_class_method' do
+    it 'requies keyword a' do
+      expect(
+        Example.method(:example_class_method)
+      ).to have_required_keyword(:a)
+    end
+
+    it 'has optional keyword b' do
+      expect(
+        Example.method(:example_class_method)
+      ).to have_optional_keyword(:b)
+    end
+  end
+
+  describe '#example_instance_method' do
+    it 'requies keyword a' do
+      expect(
+        Example.instance_method(:example_instance_method)
+      ).to have_required_keyword(:a)
+    end
+
+    it 'has optional keyword b' do
+      expect(
+        Example.instance_method(:example_instance_method)
+      ).to have_optional_keyword(:b)
+    end
+  end
+end
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/terryfinn/keyword_parameter_matchers/fork )

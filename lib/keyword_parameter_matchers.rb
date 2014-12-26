@@ -1,6 +1,7 @@
 require 'keyword_parameter_matchers/have_keyword_parameter'
 require 'keyword_parameter_matchers/have_optional_keyword_parameter'
 require 'keyword_parameter_matchers/have_required_keyword_parameter'
+require 'keyword_parameter_matchers/matcher_helpers'
 require 'keyword_parameter_matchers/null_method'
 require 'keyword_parameter_matchers/version'
 
