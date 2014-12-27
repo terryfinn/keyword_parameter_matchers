@@ -13,12 +13,12 @@ module KeywordParameterMatchers
     end
 
     def failure_message
-      "expected \"#{expected}\" to a keyword parameter in #{method_name} " \
+      "expected \"#{expected}\" to have a keyword parameter in #{method_name} " \
         "parameter list #{parameter_list.inspect}"
     end
 
     def failure_message_when_negated
-      "expected \"#{expected}\" not to a keyword parameter in #{method_name} " \
+      "expected \"#{expected}\" not to have a keyword parameter in #{method_name} " \
         "parameter list #{parameter_list.inspect}"
     end
 

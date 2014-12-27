@@ -13,7 +13,7 @@ module KeywordParameterMatchers
     end
 
     def failure_message
-      "expected \"#{expected}\" to be a optional keyword parameter in " \
+      "expected \"#{expected}\" to be an optional keyword parameter in " \
         "example_method parameter list #{parameter_list.inspect}"
     end
 
