@@ -41,7 +41,7 @@ describe KeywordParameterMatchers::HaveKeywordParameter do
       }.to change {
         matcher.failure_message
       }.to(
-        'expected "b" to a keyword parameter in example_method ' \
+        'expected "b" to have a keyword parameter in example_method ' \
           'parameter list [[:key, :a]]'
       )
     end
@@ -61,7 +61,7 @@ describe KeywordParameterMatchers::HaveKeywordParameter do
       }.to change {
         matcher.failure_message_when_negated
       }.to(
-        'expected "a" not to a keyword parameter in example_method ' \
+        'expected "a" not to have a keyword parameter in example_method ' \
           'parameter list [[:key, :a]]'
       )
     end

@@ -41,7 +41,7 @@ describe KeywordParameterMatchers::HaveOptionalKeywordParameter do
       }.to change {
         matcher.failure_message
       }.to(
-        'expected "a" to be a optional keyword parameter in ' \
+        'expected "a" to be an optional keyword parameter in ' \
           'example_method parameter list [[:keyreq, :a]]'
       )
     end
