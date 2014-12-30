@@ -25,14 +25,6 @@ $ gem install keyword_parameter_matchers
 ```ruby
 require 'keyword_parameter_matchers/rspec'
 
-
-```
-
-## Usage
-
-```ruby
-require 'keyword_parameter_matchers/rspec'
-
 class Example
   def self.example_class_method(a:, b: 'B')
   end
